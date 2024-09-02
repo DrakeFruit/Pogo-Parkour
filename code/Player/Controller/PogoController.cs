@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
 using Sandbox;
 
@@ -48,6 +49,11 @@ public sealed class PogoController : Component
 		}
 
 		Scene.Camera.Transform.Position = Transform.Position + Vector3.Up * 200 + Vector3.Backward * 400;
-		Transform.Rotation *= new Rotation(-Input.AnalogMove.x, -Input.AnalogMove.y, 0, 0) * Scene.Camera.Transform.Rotation / 100; 
+		Transform.Rotation *= Rotation.From(Input.AnalogMove.x, 0, -Input.AnalogMove.y);
+		// Vector3 eulerOffset = Time.Delta * new Vector3(Input.AnalogMove.y, -Input.AnalogMove.x, 0);
+		// Vector3 eulerOffsetGlobal = Scene.Camera.Transform.Rotation * eulerOffset;
+		// Rotation offset = new Quaternion(eulerOffsetGlobal, 0);
+		// Transform.Rotation = offset * Transform.Rotation;
+
 	}
 }

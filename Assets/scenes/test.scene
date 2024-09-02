@@ -100,7 +100,7 @@
               "256,256"
             ],
             "MaterialIndex": [
-              0
+              -1
             ],
             "EdgeFlags": [
               0,
@@ -113,7 +113,12 @@
               0
             ],
             "Materials": [
-              "materials/dev/reflectivity_30.vmat"
+              "materials/dev/reflectivity_30.vmat",
+              "materials/lake_water.vmat",
+              "materials/shadertest/test_water.vmat",
+              "materials/tfwater.vmat",
+              "materials/physics/water.vmat",
+              "materials/tool_water.vmat"
             ]
           },
           "SmoothingAngle": 40,
@@ -149,7 +154,6 @@
         {
           "__type": "Sandbox.Bloom",
           "__guid": "d73ef723-c888-41d4-802e-f797c79318be",
-          "__enabled": false,
           "BloomColor": {
             "color": [
               {
@@ -172,7 +176,7 @@
             }
           ],
           "Mode": "Additive",
-          "Strength": 0.5,
+          "Strength": 0.3,
           "Threshold": 0.5,
           "ThresholdWidth": 0.5
         },
@@ -2337,6 +2341,9 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [
+    "loli.tool_water",
+    "nolankicks.lake_water",
+    "roomfield.water",
     "sboxmp.scientist_suit"
   ],
   "__version": 1
