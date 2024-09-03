@@ -6,7 +6,11 @@ public sealed class PogoCameraController : Component
 	[Property] public float Distance { get; set; } = 200;
 	[Property] public float ZoomSpeed { get; set; } = 20;
 	[RequireComponent] PogoController controller { get; set; }
-	public GameObject Head { get; set; } = new();
+	public GameObject Head { get; set; }
+	protected override void OnStart()
+	{
+		Head = new(true, "Head");
+	}
 	protected override void OnUpdate()
 	{
 		var eyeAngles = Head.Transform.Rotation.Angles();
