@@ -113,12 +113,7 @@
               0
             ],
             "Materials": [
-              "materials/dev/reflectivity_30.vmat",
-              "materials/lake_water.vmat",
-              "materials/shadertest/test_water.vmat",
-              "materials/tfwater.vmat",
-              "materials/physics/water.vmat",
-              "materials/tool_water.vmat"
+              "materials/dev/reflectivity_30.vmat"
             ]
           },
           "SmoothingAngle": 40,
@@ -131,7 +126,7 @@
       "Flags": 0,
       "Name": "Camera",
       "Position": "-209.2139,-0.00003803456,108.1461",
-      "Rotation": "0,0.05886614,0,0.9982659",
+      "Rotation": "0,0.08889424,0,0.9960411",
       "Enabled": true,
       "Components": [
         {
@@ -208,14 +203,15 @@
         {
           "__type": "PogoController",
           "__guid": "87baee75-f424-4f55-8e72-55b4cb45de4e",
-          "BaseJumpForce": 5,
+          "BaseJumpForce": 200,
           "Contact": {
             "_type": "component",
-            "component_id": "9c8a9036-4912-4c7e-ae5a-0e27dd9247f6",
+            "component_id": "51c1e89e-010d-44c5-a2f0-96bbee0bb346",
             "go": "201386c2-d79f-4536-bc1a-0cb35324b9c6",
-            "component_type": "SphereCollider"
+            "component_type": "CapsuleCollider"
           },
-          "MaxJumpForce": 15
+          "LeanSpeed": 80,
+          "MaxJumpForce": 40
         },
         {
           "__type": "Sandbox.Rigidbody",
@@ -223,7 +219,11 @@
           "AngularDamping": 0,
           "Gravity": true,
           "LinearDamping": 0,
-          "Locking": {},
+          "Locking": {
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
           "MassCenterOverride": "0,0,60",
           "MassOverride": 100,
           "MotionEnabled": true,
@@ -232,13 +232,10 @@
           "StartAsleep": false
         },
         {
-          "__type": "Sandbox.CapsuleCollider",
-          "__guid": "493b90c6-b099-418b-a233-b7dc387b84f9",
-          "End": "0,0,54.09031",
-          "IsTrigger": false,
-          "Radius": 2.3000026,
-          "Start": "0,0,1.927244",
-          "Static": false
+          "__type": "PogoCameraController",
+          "__guid": "da543fc9-d243-4d90-b45c-a2386af99c49",
+          "Distance": 400,
+          "ZoomSpeed": 20
         }
       ],
       "Children": [
@@ -258,6 +255,21 @@
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": false
+            },
+            {
+              "__type": "Sandbox.ModelPhysics",
+              "__guid": "c41e66f6-27e6-4177-a767-b8574dab0e1f",
+              "__enabled": false,
+              "Locking": {},
+              "Model": "models/player/scientist_suit/scientist_suit.vmdl",
+              "MotionEnabled": true,
+              "Renderer": {
+                "_type": "component",
+                "component_id": "59a6575a-f10d-42ed-b467-484ef2d0b273",
+                "go": "9509741a-f844-4322-b04b-fd3e8feaccec",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "RigidbodyFlags": 0
             }
           ],
           "Children": [
@@ -2282,33 +2294,34 @@
           "__guid": "201386c2-d79f-4536-bc1a-0cb35324b9c6",
           "Flags": 0,
           "Name": "Contact",
-          "Position": "0,0.04122102,1.834285",
+          "Position": "0,0.04122102,3.725202",
           "Enabled": true,
           "Components": [
             {
-              "__type": "Sandbox.SphereCollider",
-              "__guid": "9c8a9036-4912-4c7e-ae5a-0e27dd9247f6",
-              "Center": "0,0,0",
-              "IsTrigger": true,
-              "Radius": 2,
+              "__type": "Sandbox.CapsuleCollider",
+              "__guid": "51c1e89e-010d-44c5-a2f0-96bbee0bb346",
+              "End": "0,0,22.54099",
+              "IsTrigger": false,
+              "Radius": 3,
+              "Start": "0,0,-0.9820683",
               "Static": false
             }
           ]
         },
         {
-          "__guid": "97d48685-4c5d-45f4-ae29-cdfc438f328e",
+          "__guid": "dba801b1-1006-44c7-a669-aacf37cb91c9",
           "Flags": 0,
           "Name": "Collider",
-          "Position": "-10.67783,-0.0000006364487,43.13704",
+          "Position": "-8.374687,-0.0000003858046,50.06125",
+          "Rotation": "0,-0.04755633,0,0.9988687",
           "Enabled": true,
           "Components": [
             {
-              "__type": "Sandbox.CapsuleCollider",
-              "__guid": "351698dc-d809-477a-852b-0f2636a528cb",
-              "End": "2.900018,0,26.65499",
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "32c89325-d1b7-45a7-a200-7b741be5cd94",
+              "Center": "0,0,0",
               "IsTrigger": false,
-              "Radius": 14.500022,
-              "Start": "9.299998,0,-19.23431",
+              "Scale": "15,15,65",
               "Static": false
             }
           ]
@@ -2341,9 +2354,6 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [
-    "loli.tool_water",
-    "nolankicks.lake_water",
-    "roomfield.water",
     "sboxmp.scientist_suit"
   ],
   "__version": 1

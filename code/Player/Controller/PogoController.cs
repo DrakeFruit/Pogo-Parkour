@@ -7,12 +7,16 @@ public sealed class PogoController : Component
 {
 	[Property] public float BaseJumpForce = 1000;
 	[Property] public float MaxJumpForce { get; set; } = 15f;
-	[Property] public SphereCollider Contact { get; set; }
+	[Property] public float LeanSpeed { get; set; } = 100f;
+	[Property] public CapsuleCollider Contact { get; set; }
 	[RequireComponent] public Rigidbody rigidbody { get; set; }
 	public float JumpForce { get; set; }
 	public bool IsGrounded = false;
 	public bool IsJumping = false;
 	public TimeSince TimeHeld = 0f;
+	public Angles tilt;
+	public Rotation targetRotation;
+
 	protected override void OnFixedUpdate()
 	{
 		//Grounded check
@@ -35,25 +39,17 @@ public sealed class PogoController : Component
 		{
 			if( !IsJumping ) TimeHeld = 0f;
 			IsJumping = true;
-			
-			JumpForce = BaseJumpForce + TimeHeld * 600;
-			JumpForce = float.Clamp(JumpForce, BaseJumpForce, MaxJumpForce * 100);
-			Log.Info(JumpForce);
+			JumpForce = BaseJumpForce + TimeHeld * 400;
+			JumpForce = float.Clamp(JumpForce, BaseJumpForce, MaxJumpForce * 20);
 		}
 		if( Input.Released( "Jump" ) )
 		{
 			if(IsJumping) IsJumping = false;
 			TimeHeld = 0f;
-			Log.Info("jump");
 			if( IsGrounded ) rigidbody.ApplyImpulse( Transform.Rotation.Up * JumpForce * rigidbody.PhysicsBody.Mass );
 		}
 
-		Scene.Camera.Transform.Position = Transform.Position + Vector3.Up * 200 + Vector3.Backward * 400;
-		Transform.Rotation *= Rotation.From(Input.AnalogMove.x, 0, -Input.AnalogMove.y);
-		// Vector3 eulerOffset = Time.Delta * new Vector3(Input.AnalogMove.y, -Input.AnalogMove.x, 0);
-		// Vector3 eulerOffsetGlobal = Scene.Camera.Transform.Rotation * eulerOffset;
-		// Rotation offset = new Quaternion(eulerOffsetGlobal, 0);
-		// Transform.Rotation = offset * Transform.Rotation;
-
+		rigidbody.PhysicsBody.Rotation *= Rotation.From(Input.AnalogMove.x, 0, -Input.AnalogMove.y) * Time.Delta * LeanSpeed;
+		rigidbody.PhysicsBody.Rotation = rigidbody.PhysicsBody.Rotation.Angles().WithYaw(Scene.Camera.Transform.Rotation.Yaw());
 	}
 }
