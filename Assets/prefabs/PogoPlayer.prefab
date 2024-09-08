@@ -17,17 +17,17 @@
           "component_type": "BoxCollider"
         },
         "LeanSpeed": 80,
-        "MaxJumpMultiplier": 5
+        "MaxJumpMultiplier": 3
       },
       {
         "__type": "Sandbox.CharacterController",
         "__guid": "00890552-9783-45f5-8f80-f0984096ec54",
         "Acceleration": 10,
-        "Bounciness": 0.3,
-        "GroundAngle": 45,
+        "Bounciness": 0,
+        "GroundAngle": 85,
         "Height": 56.3,
         "IgnoreLayers": "player",
-        "Radius": 2,
+        "Radius": 5,
         "StepHeight": 18,
         "UseCollisionRules": false
       },
@@ -48,7 +48,7 @@
           {
             "__type": "Sandbox.MeshComponent",
             "__guid": "4c0266d2-710f-41a5-93d3-b30352b46144",
-            "Collision": "Hull",
+            "Collision": "None",
             "Color": "1,1,1,1",
             "HideInGame": false,
             "IsTrigger": false,
@@ -404,7 +404,7 @@
               {
                 "__type": "Sandbox.MeshComponent",
                 "__guid": "f4994c29-c811-4d55-9947-2c497361b73d",
-                "Collision": "Hull",
+                "Collision": "None",
                 "Color": "1,1,1,1",
                 "HideInGame": false,
                 "IsTrigger": false,
@@ -759,7 +759,7 @@
               {
                 "__type": "Sandbox.MeshComponent",
                 "__guid": "6909da7e-7b96-4c0d-8747-1b8062bba80c",
-                "Collision": "Hull",
+                "Collision": "None",
                 "Color": "1,1,1,1",
                 "HideInGame": false,
                 "IsTrigger": false,

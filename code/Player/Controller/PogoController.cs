@@ -21,7 +21,7 @@ public sealed class PogoController : Component
 	}
 	protected override void OnFixedUpdate()
 	{
-		if ( Alive ) Move();
+		if ( Alive && !IsProxy ) Move();
 	}
 	public void Move()
 	{
@@ -53,11 +53,22 @@ public sealed class PogoController : Component
 		Angles wishRotation = new Angles( Input.AnalogMove.x, 0, -Input.AnalogMove.y ) * Time.Delta;
 		Transform.Rotation *= wishRotation * LeanSpeed;
 		Transform.Rotation = Transform.Rotation.Angles().WithYaw( Scene.Camera.Transform.Rotation.Yaw() );
+
+		//Keybinds
+		if ( Input.Pressed( "reload" ) ) Respawn();
 	}
 	public void Die()
 	{
 		Log.Info( "dead" );
 		Alive = false;
 		Ragdoll.Enabled = true;
+	}
+
+	public void Respawn()
+	{
+		//Ragdoll.Enabled = false;
+		Transform.Position = new Vector3( 0, 0, 0 );
+		Player.Velocity = Vector3.Zero;
+		Alive = true;
 	}
 }
