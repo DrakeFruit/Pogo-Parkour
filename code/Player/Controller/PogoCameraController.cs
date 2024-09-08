@@ -3,7 +3,7 @@ using Sandbox.UI;
 
 public sealed class PogoCameraController : Component
 {
-	[Property] public float Distance { get; set; } = 200;
+	[Property] public float Distance { get; set; } = 400;
 	[Property] public float ZoomSpeed { get; set; } = 20;
 	[RequireComponent] PogoController controller { get; set; }
 	public GameObject Head { get; set; }
