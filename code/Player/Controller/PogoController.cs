@@ -50,7 +50,7 @@ public sealed class PogoController : Component
 		}
 
 		//Pogo tilt
-		Angles wishRotation = new Angles( Input.AnalogMove.x, 0, -Input.AnalogMove.y ) * Time.Delta;
+		Angles wishRotation = new Angles( Input.AnalogMove.x, 0, 0 ) * Time.Delta;
 		Transform.Rotation *= wishRotation * LeanSpeed;
 		Transform.Rotation = Transform.Rotation.Angles().WithYaw( Scene.Camera.Transform.Rotation.Yaw() );
 

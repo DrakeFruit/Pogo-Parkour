@@ -528,7 +528,7 @@
                 ]
               },
               "SmoothingAngle": 40,
-              "Static": false
+              "Static": true
             }
           ]
         },
@@ -646,8 +646,7 @@
     "facepunch.oildrumexplosive",
     "facepunch.pallet",
     "facepunch.trolley",
-    "facepunch.weapon_crate_stackb",
-    "garry.crate"
+    "facepunch.weapon_crate_stackb"
   ],
   "__version": 1
 }
