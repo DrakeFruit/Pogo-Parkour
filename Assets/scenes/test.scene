@@ -68,6 +68,7 @@
           "__type": "Sandbox.Tonemapping",
           "__guid": "9d76f362-7227-40eb-a189-69353c780c46",
           "__version": 1,
+          "AutoExposureEnabled": true,
           "ExposureBias": 2,
           "ExposureCompensation": 0,
           "ExposureMethod": "RGB",
@@ -121,440 +122,22 @@
       "Enabled": true,
       "Children": [
         {
-          "__guid": "5e3672e7-d26a-4f39-b483-d2962a378e33",
+          "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
           "Flags": 0,
-          "Name": "office_chair",
-          "Position": "-410.2795,-180.7889,132.3543",
-          "Rotation": "0.3076189,0,0,0.9515097",
-          "Scale": "2.128584,2.128584,2.128584",
+          "Name": "Sun",
+          "Position": "-794.2795,-375.7594,-94.06848",
+          "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+          "Tags": "light_directional,light",
           "Enabled": true,
           "Components": [
             {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "975dd033-f447-423c-bd18-4244b663726c",
-              "BodyGroups": 18446744073709551615,
-              "CreateBoneObjects": false,
-              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1",
-              "UseAnimGraph": true
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "998baaed-259f-42df-9de5-7511703d2e13",
-              "IsTrigger": false,
-              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "2bdfc8d3-a399-484c-acc1-626950a6ec81",
-          "Flags": 0,
-          "Name": "trolley",
-          "Position": "-420.1107,-17.22278,142.8698",
-          "Rotation": "-0.1961059,0.7374133,-0.6219913,0.1757578",
-          "Scale": "4.086538,4.086538,4.086538",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "c5dc8394-bbb2-44d7-922d-145ff6de4d3c",
-              "BodyGroups": 18446744073709551615,
-              "CreateBoneObjects": false,
-              "Model": "models/sbox_props/trolley/trolley.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1",
-              "UseAnimGraph": true
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "71571b28-21ef-4f7b-98e6-88fe5a28afdc",
-              "IsTrigger": false,
-              "Model": "models/sbox_props/trolley/trolley.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "97e09c1a-c406-4019-a2a8-d5830661b8fc",
-          "Flags": 0,
-          "Name": "filing_cabinet_03",
-          "Position": "-89.5412,50.08688,-37.20587",
-          "Rotation": "0.6581509,-0.4524792,0.495865,0.3409075",
-          "Scale": "4.74882,4.74882,4.74882",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "1582b34f-3eed-44a2-a436-9bc2fda8a529",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_03.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "be6a928d-368c-47dd-8172-d863c78a8058",
-              "IsTrigger": false,
-              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_03.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "22ba6e3a-f5e1-4fbb-acf9-0af05afa6759",
-          "Flags": 0,
-          "Name": "pallet",
-          "Position": "-226.9752,-503.7594,-243.5296",
-          "Rotation": "0.04234048,-0.1772158,0.2284902,0.9563441",
-          "Scale": "4.49327,4.49327,4.49327",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "1dff0394-a888-4196-bb98-ddb606f46db8",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/sbox_props/pallet/pallet.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "53ca975d-9364-4eb4-977b-7ffb0292d4d6",
-              "Center": "0,0,3",
-              "IsTrigger": false,
-              "Scale": "40.90009,46.40004,6.400008",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "0c7a8a68-741c-4d4a-a99d-8efaf4ee3253",
-          "Flags": 0,
-          "Name": "weapon_crate_stackb",
-          "Position": "-480.6806,-390.4374,-407.8853",
-          "Rotation": "0.05348301,-0.0689519,0.6105579,0.7871495",
-          "Scale": "2.833607,2.833607,2.833607",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "4890ac83-129f-4bac-8071-48b90e9673b9",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/props/weapon_crate/weapon_crate_stackb.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "06e50cea-7238-4fd7-b578-7ed45cd030f8",
-              "IsTrigger": false,
-              "Model": "models/props/weapon_crate/weapon_crate_stackb.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "d789f2f9-9339-4969-8f34-b4bb531203a6",
-          "Flags": 0,
-          "Name": "crate01 (3)",
-          "Position": "15.39014,-403.0205,-166.2743",
-          "Scale": "1.200422,1.200422,1.200422",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "922ed7f5-9467-4085-9332-b7a221cb1f25",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "c1e0f131-dad6-4f37-9ae5-cd3dbfe60040",
-              "IsTrigger": false,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "590c8bca-6b48-473a-bf36-9dcce7391ea0",
-          "Flags": 0,
-          "Name": "crate01 (2)",
-          "Position": "-51.88696,-346.6729,-180.5841",
-          "Scale": "1.200422,1.200422,1.200422",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "7a48a00d-43f5-44bd-9169-2524cabe1c0d",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "817203de-42d7-479c-8ebb-87f96e98e2f9",
-              "IsTrigger": false,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "878e6b1f-230b-44b5-94ab-2e702e07b387",
-          "Flags": 0,
-          "Name": "crate01 (4)",
-          "Position": "24.58234,-463.5222,-153.2025",
-          "Scale": "1.200422,1.200422,1.200422",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "d064df63-6084-4ad8-a54f-083311b9f353",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "724fd566-a0d6-479a-8f78-c924aca31592",
-              "IsTrigger": false,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "6b083626-25d4-41ba-9e6e-1f9bd5a2fa35",
-          "Flags": 0,
-          "Name": "crate01 (1)",
-          "Position": "-32.50165,-397.3135,-169.2458",
-          "Scale": "1.200422,1.200422,1.200422",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "7f171ec1-f64c-4efd-aef4-0ecb7ddad020",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "42146d9c-873d-44f2-a613-d1d2dbab0286",
-              "IsTrigger": false,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "2f9c0960-d186-40d0-96cf-1b1859531b67",
-          "Flags": 0,
-          "Name": "crate01 (5)",
-          "Position": "-19.33875,-444.8964,-172.707",
-          "Scale": "1.200422,1.200422,1.200422",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "b52cd3a4-0ac3-4655-808f-653e8a777a64",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "c3dcb7de-8342-4f70-9596-96abb901448a",
-              "IsTrigger": false,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "aa01d436-c9d6-4d32-8483-1a0131253dd0",
-          "Flags": 0,
-          "Name": "crate01",
-          "Position": "-77.72778,-412.4811,-187.0168",
-          "Scale": "1.200422,1.200422,1.200422",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "fa3db393-958e-4687-b4b6-69d2fa4212e3",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "33acf1e7-3d63-466e-a631-b4ef627b08a5",
-              "IsTrigger": false,
-              "Model": "models/citizen_props/crate01.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "7c13928d-1999-4209-b855-c83fb90f6ee8",
-          "Flags": 0,
-          "Name": "Box",
-          "Position": "-794.2795,-375.7594,-382.0685",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.MeshComponent",
-              "__guid": "62f43168-4fb7-44e1-b569-1e85c82c4292",
-              "Collision": "Mesh",
-              "Color": "1,1,1,1",
-              "HideInGame": false,
-              "IsTrigger": false,
-              "Mesh": {
-                "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
-                "Positions": [
-                  "-128,-128,64",
-                  "128,-128,64",
-                  "128,128,64",
-                  "-128,128,64",
-                  "-128,128,-64",
-                  "128,128,-64",
-                  "128,-128,-64",
-                  "-128,-128,-64"
-                ],
-                "TextureCoord": [
-                  "1,1",
-                  "-1,-0.5",
-                  "1,-1",
-                  "-1,-0.5",
-                  "-1,-1",
-                  "-1,-0.5",
-                  "-1,1",
-                  "-1,-0.5",
-                  "1,-1",
-                  "1,0.5",
-                  "1,1",
-                  "1,0.5",
-                  "-1,1",
-                  "1,0.5",
-                  "-1,-1",
-                  "1,0.5",
-                  "1,-0.5",
-                  "-1,0.5",
-                  "-1,0.5",
-                  "1,-0.5",
-                  "-1,0.5",
-                  "1,-0.5",
-                  "1,-0.5",
-                  "-1,0.5"
-                ],
-                "TextureUAxis": [
-                  "1,0,0",
-                  "1,0,-0",
-                  "0,-1,0",
-                  "0,1,0",
-                  "-1,0,0",
-                  "1,-0,0"
-                ],
-                "TextureVAxis": [
-                  "0,-1,0",
-                  "0,-1,0",
-                  "0,0,-1",
-                  "-0,0,-1",
-                  "0,0,-1",
-                  "-0,0,-1"
-                ],
-                "TextureScale": [
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25"
-                ],
-                "TextureOffset": [
-                  "0,0",
-                  "0,0",
-                  "0,256",
-                  "0,256",
-                  "0,256",
-                  "0,256"
-                ],
-                "MaterialIndex": [
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "EdgeFlags": [
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "Materials": [
-                  "materials/dev/reflectivity_30.vmat"
-                ]
-              },
-              "SmoothingAngle": 40,
-              "Static": true
-            }
-          ]
-        },
-        {
-          "__guid": "7a0f02d9-1e48-429a-81cd-948cb7c11e15",
-          "Flags": 0,
-          "Name": "oil_drum_explosive",
-          "Position": "-325.32,-312.2937,270.3666",
-          "Rotation": "0.4011204,-0.07672183,-0.1714829,0.8965544",
-          "Scale": "2.691544,2.691544,2.691544",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "79a94fbe-9dce-42d7-a7c7-b5faa81c4526",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "a664ab64-46df-4f0c-a385-5e2aa246b614",
-              "IsTrigger": false,
-              "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
-              "Static": false
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.94419,0.97767,1,1",
+              "Shadows": true,
+              "SkyColor": "0.2532,0.32006,0.35349,1"
             }
           ]
         },
@@ -594,24 +177,2269 @@
           ]
         },
         {
-          "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+          "__guid": "7a0f02d9-1e48-429a-81cd-948cb7c11e15",
           "Flags": 0,
-          "Name": "Sun",
-          "Position": "-794.2795,-375.7594,-94.06848",
-          "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
-          "Tags": "light_directional,light",
+          "Name": "oil_drum_explosive",
+          "Position": "-297.6327,-314.192,212.441",
+          "Rotation": "0.4011204,-0.07672183,-0.1714829,0.8965544",
+          "Scale": "0.9376609,0.9376609,0.9376609",
           "Enabled": true,
           "Components": [
             {
-              "__type": "Sandbox.DirectionalLight",
-              "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
-              "FogMode": "Enabled",
-              "FogStrength": 1,
-              "LightColor": "0.94419,0.97767,1,1",
-              "Shadows": true,
-              "SkyColor": "0.2532,0.32006,0.35349,1"
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "79a94fbe-9dce-42d7-a7c7-b5faa81c4526",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "a664ab64-46df-4f0c-a385-5e2aa246b614",
+              "IsTrigger": false,
+              "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
+              "Static": false
             }
           ]
+        },
+        {
+          "__guid": "0c7a8a68-741c-4d4a-a99d-8efaf4ee3253",
+          "Flags": 0,
+          "Name": "weapon_crate_stackb",
+          "Position": "-480.6806,-390.4374,-407.8853",
+          "Rotation": "0.05348301,-0.0689519,0.6105579,0.7871495",
+          "Scale": "2.833607,2.833607,2.833607",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "4890ac83-129f-4bac-8071-48b90e9673b9",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/weapon_crate/weapon_crate_stackb.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "06e50cea-7238-4fd7-b578-7ed45cd030f8",
+              "IsTrigger": false,
+              "Model": "models/props/weapon_crate/weapon_crate_stackb.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "22ba6e3a-f5e1-4fbb-acf9-0af05afa6759",
+          "Flags": 0,
+          "Name": "pallet",
+          "Position": "-202.3405,-479.1539,-133.3613",
+          "Rotation": "-0.1198304,-0.02909563,0.9760792,0.1790624",
+          "Scale": "1.241475,1.241475,1.241475",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "1dff0394-a888-4196-bb98-ddb606f46db8",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/pallet/pallet.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "53ca975d-9364-4eb4-977b-7ffb0292d4d6",
+              "Center": "0,0,3",
+              "IsTrigger": false,
+              "Scale": "40.90009,46.40004,6.400008",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "97e09c1a-c406-4019-a2a8-d5830661b8fc",
+          "Flags": 0,
+          "Name": "filing_cabinet_03",
+          "Position": "-103.1539,-76.63824,115.8404",
+          "Rotation": "0.6581509,-0.4524792,0.495865,0.3409075",
+          "Scale": "2.025618,2.025618,2.025618",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "1582b34f-3eed-44a2-a436-9bc2fda8a529",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_03.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "be6a928d-368c-47dd-8172-d863c78a8058",
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_03.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "2bdfc8d3-a399-484c-acc1-626950a6ec81",
+          "Flags": 0,
+          "Name": "trolley",
+          "Position": "-182.1542,-52.84747,193.2404",
+          "Rotation": "-0.1936339,0.8657255,-0.4256417,0.1784775",
+          "Scale": "1.653961,1.653961,1.653961",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "c5dc8394-bbb2-44d7-922d-145ff6de4d3c",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "Model": "models/sbox_props/trolley/trolley.vmdl",
+              "Morphs": {},
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "71571b28-21ef-4f7b-98e6-88fe5a28afdc",
+              "IsTrigger": false,
+              "Model": "models/sbox_props/trolley/trolley.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "e8fe6f1e-aee4-4386-bcbc-8e76c5b44bcb",
+          "Flags": 0,
+          "Name": "Slip",
+          "Position": "-1507.611,-2660.926,2955.689",
+          "Tags": "slip",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "3a2faa70-302d-487b-995c-3ffad858830b",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1099.902,2128.857,-3507.744",
+              "Rotation": "0.1315444,0.5698729,-0.182438,0.7903526",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f1fb3517-cbae-4755-9175-99614433e486",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "2bbb71dc-989f-4914-8dc7-de919a9ad7a6",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "bbc4246f-5aad-4197-9120-8e9d8e37c517",
+              "Flags": 0,
+              "Name": "rock_med_c",
+              "Position": "869.3136,1812.155,-3289.028",
+              "Rotation": "0.3018495,0.04615849,-0.1550455,0.9395303",
+              "Scale": "1.843784,1,1",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "66a76b2b-24c3-4e33-86a0-cf3929808b73",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "244b03cf-7f2c-4b05-9a1f-7d8d91bf0bdf",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "513b0355-98cd-47e0-8bea-3ce0a1d80957",
+              "Flags": 0,
+              "Name": "rock_med_a (2)",
+              "Position": "901.9893,1703.009,-2761.758",
+              "Rotation": "0.117847,0.6998824,0.1187803,0.6943831",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f31fbabc-d020-48cb-a3a1-9ce5ba2984e6",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "567df9e2-ecb9-4d7d-a0fc-e0217cea3f88",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "b010acbe-49e0-4433-8e7d-a3e2b6b69fc1",
+              "Flags": 0,
+              "Name": "rock_med_a",
+              "Position": "734.1233,1733.224,-3175.104",
+              "Rotation": "0.117847,0.6998824,0.1187803,0.6943831",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "24cb1ea9-d366-4cc0-8b28-08a667817d51",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "85fa5ba2-1e46-4709-98f1-5103b7b3df7a",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "48ead8bb-6048-4f64-9455-91b50c9ea4de",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1319.037,3263.136,-2616.406",
+              "Rotation": "-0.03801341,0.09177251,0.6057506,0.7894296",
+              "Scale": "1.786306,1.786306,2.314765",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "3edacf0f-8d24-4d06-a620-ba29a01ca562",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "188e7efe-ffa7-42a7-9b71-2974e8a9787b",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "c4db66e8-25a9-4bba-af11-58bbc32bc903",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1643.25,3438.152,-1727.766",
+              "Rotation": "0.671597,0.3153113,0.2883236,0.6053146",
+              "Scale": "1.650552,1.786306,3.249225",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "dd3fec89-e8a5-438b-be33-e366c35a3bae",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "90ee8da1-66ec-42b4-87d1-e423df7ae541",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "92e6a53d-eef6-4350-913d-b675d464b967",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1413.488,1750.639,-2330.662",
+              "Rotation": "0.000000007450581,0.09933385,0.8617423,0.4975272",
+              "Scale": "1.786306,1.786306,2.314765",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "3c2f7a5d-0b0f-46f2-b36c-6d8df8bc9775",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "dda8f9b1-4469-4664-8c76-d2219b7dfb33",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "fb18df40-7852-4516-9bb3-cc7955bb68f0",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "2023.229,2106.056,-2454.216",
+              "Rotation": "-0.09594914,0.02570951,-0.2575389,0.9611487",
+              "Scale": "1.786306,1.786306,2.314765",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "acc84678-99ab-4aaf-82c6-ac09499fd645",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "da0d9740-af7a-40f5-bfca-40abf102aec9",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "526d9f72-992a-4927-a576-f8972e86c31c",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1609.332,1901.167,-2889.758",
+              "Rotation": "-0.06047061,0.07880685,0.7894295,0.6057507",
+              "Scale": "1.786306,1.786306,1.786306",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0fe9d127-0a9f-40a7-be4d-493cb52382b6",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "8b62c0bf-d03d-4717-8cd0-37626691f49f",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "50ee4d6d-1e4a-4255-aa59-a67cde896aea",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1170.553,1706.975,-3194.058",
+              "Rotation": "0,0.00000001490116,0.7933533,0.6087615",
+              "Scale": "1.786306,1.786306,1.786306",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "97751d8e-9f13-480e-afd1-7f1b7b567290",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "bb0d3909-de68-4b89-8424-2f0f1dd2be74",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "61a27727-dd44-4a11-b5c6-4c9ce13f5757",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "-444.4709,1327.805,-2832.208",
+              "Rotation": "-0.000000005702425,0.00000001376688,0.5,0.8660254",
+              "Scale": "1.786306,1.786306,1.786306",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a27bbf92-5f09-44d8-929e-e3873256dc4a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "3ae9b934-9915-4e69-8940-9125b2e3a6ba",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "55e71156-80d9-4029-ba80-d168fe79d039",
+              "Flags": 0,
+              "Name": "rock_med_b",
+              "Position": "1749.984,2011.873,-3024.833",
+              "Rotation": "-0.2751519,0.6564767,0.2715053,0.6477768",
+              "Scale": "1,1,1.58937",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "ee629abc-bd18-4f26-8286-d49c02cfc819",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "a0eee5d9-710a-405e-9e9d-836de8941583",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "31b72470-cf75-4255-84b3-b1fa4eb354dc",
+              "Flags": 0,
+              "Name": "rock_cliff_b",
+              "Position": "713.3316,3181.167,-3145.758",
+              "Rotation": "0.7071069,0.7071066,0.0000001376788,0.0000001376788",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "ba860643-7619-4fa2-b3bf-f932e9bfa2ce",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "e2339a4a-121b-45bc-b00e-aabdaf89e062",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "dac3dcc2-0d6d-43f3-9247-c7b7733383c5",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "713.3319,3181.167,-3017.758",
+              "Rotation": "0.7071069,0.7071066,0.0000001376788,0.0000001376788",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f34033a0-ae86-4228-bc1a-02400569cfed",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "c5d0e48f-f4b3-4e2c-b5a0-8e32ef0aef4a",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "acca6578-e3ac-47f3-89fc-de774141318e",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "799.7068,3542.981,-1887.084",
+              "Rotation": "0.7071069,0.7071066,0.0000001376788,0.0000001376788",
+              "Scale": "0.8654553,1.216443,1",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0c4028ca-a079-42e8-a727-5a1a2c616f8d",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "4e14af7b-6ccd-4a28-8936-3fdc988a2df6",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "7555f0da-a922-4392-bfe9-9a9521675636",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "489.6167,1230.591,-2122.052",
+              "Rotation": "0.7071066,0.7071064,0.0004651964,0.0004651966",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "cbe3b5bf-74c2-41b1-86e3-79a38bbd776c",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "6585b267-cf85-4408-b876-f8bb34dab2f0",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "1cda660b-bb9a-47f9-9ba6-4a7f4c961e80",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "2503.814,2541.167,-2119.401",
+              "Rotation": "0.9999996,-0.0000001192093,0.0006578872,0.0000000001455192",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "cb7f9fff-bac2-4135-8fd0-45951f95688a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "32779c75-33bf-43fd-8eef-76288e607b8a",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "6382c51d-519b-457c-8abc-d8bdcfd44d74",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "2375.814,2541.167,-2119.57",
+              "Rotation": "0.9999996,-0.0000001192093,0.0006578872,0.0000000001455192",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "2ec04017-f945-4887-8a32-4dc62369d784",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "2323958a-17de-49bf-9fdf-be423a14aff0",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "b81aa476-d3cb-4248-ac99-6f0ee238eccd",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "2375.478,2541.167,-1863.57",
+              "Rotation": "0.9999996,-0.0000001192093,0.0006578872,0.0000000001455192",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d9eadfd7-d79d-4bf4-9098-8f9724d5a2fc",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "786bb86f-bc4f-4fc9-8098-f9801548d271",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "2d99f7cd-280f-4ac0-bea2-7ef008eae71d",
+              "Flags": 0,
+              "Name": "rock_cliff_b (4)",
+              "Position": "2074.27,2763.411,-3017.757",
+              "Rotation": "0.6961491,0.1240018,-0.1240015,-0.696149",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "792e848f-c67c-4729-81bd-97b1b829f348",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "9b218143-6e55-4f49-b79d-0f6f9c0be7cf",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "de5c0941-c0b1-4bbe-9455-4ab39dd9d091",
+              "Flags": 0,
+              "Name": "rock_cliff_b (1)",
+              "Position": "-310.668,3181.167,-3017.758",
+              "Rotation": "0.7071069,0.7071066,0.0000001376788,0.0000001376788",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4d428061-9399-4456-a401-e017fa362819",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "15fd22c4-cce3-4bf1-a4c6-f7697d78929f",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "3ee820f3-11d0-45f3-8494-43722eeafe4a",
+              "Flags": 0,
+              "Name": "rock_cliff_b (1)",
+              "Position": "-310.6683,3315.882,-1993.758",
+              "Rotation": "0.7057254,0.7057251,0.04417928,-0.04417898",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4937071b-de93-45e8-b2f8-5406a9e2e50f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "4418a3ec-0b4e-4a3d-9ea7-0c0ab4bcaa2f",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "d64b023c-21cf-4733-adbf-f6cc7e35dbdf",
+              "Flags": 0,
+              "Name": "rock_cliff_b (2)",
+              "Position": "-746.0788,2278.669,-3145.758",
+              "Rotation": "0.00000000000003408385,-0.00000000000004363176,-0.1305264,0.9914448",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0cd606b5-aa6f-4fc4-ab14-ff133ea6a30a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "183e65e4-40ab-4ea8-b4d7-5a5877924990",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "7c13053f-ff86-4738-892d-cfd116066e83",
+              "Flags": 0,
+              "Name": "rock_cliff_b (5)",
+              "Position": "618.8731,1288.219,-3145.758",
+              "Rotation": "0.8181348,-0.5636692,0.0594641,0.096936",
+              "Scale": "0.837994,1.287947,1",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e4e91210-87e8-4277-b6de-c7b0e22983fa",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "817c5ecc-5c0e-4962-b74b-ee7d79ab8e47",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "f86ae1b4-2c35-4be9-ab96-8660a5c1e5fb",
+              "Flags": 0,
+              "Name": "rock_med_c",
+              "Position": "-575.499,1554.649,-3296.357",
+              "Rotation": "-0.001823868,0.0004621345,0.8591177,-0.5117756",
+              "Scale": "2.011615,3.1085,2.011615",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5878855e-73a3-4235-8dee-d9b9b0c5abdb",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "220c4774-ec69-425a-a48d-724d102d7137",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "e4c8482d-68f8-43ab-8f14-d789b8eee79e",
+              "Flags": 0,
+              "Name": "rock_med_c",
+              "Position": "-575.4991,1439.135,-2377.758",
+              "Rotation": "-0.001823868,0.0004621345,0.8591177,-0.5117756",
+              "Scale": "2.011615,3.1085,2.011615",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "993ffe9a-d067-4837-b2d8-a62f26ab8371",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "93a9cfe0-a753-493c-9aae-96c54676d1b3",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "276d720c-8dd5-4f39-8ff3-1ba0c3a27127",
+              "Flags": 0,
+              "Name": "rock_med_c",
+              "Position": "-454.6475,1439.135,-1689.504",
+              "Rotation": "0.4753267,-0.8374409,0.2359059,0.1307929",
+              "Scale": "2.011615,3.1085,2.011615",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "98dc1433-7f63-49a8-84f4-d09286c0ef90",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "e88845eb-1d9f-4b3d-9ace-b21dbd40124e",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_c.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "d527117e-6a0d-4c17-a810-360dd404a9d4",
+              "Flags": 0,
+              "Name": "rock_med_a",
+              "Position": "92.83704,1409.353,-3039.758",
+              "Rotation": "-0.00632691,-0.05659712,-0.1109165,0.9921967",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "b60e0aec-2e0c-4bff-9376-74d1871e5884",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "2dcb87d4-6e38-4bbf-987e-5b69dffc588f",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "9204dbf3-4271-4065-88b7-b4f9a0690d10",
+              "Flags": 0,
+              "Name": "rock_med_a (1)",
+              "Position": "457.332,1517.167,-3170.446",
+              "Rotation": "0.07325944,-0.7360447,-0.08351984,0.6677541",
+              "Scale": "1.251283,1,1",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "8afa61de-ff91-4282-9df5-1c3cd57241aa",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "450994b2-2959-41d6-b665-42368a74ab99",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "2e9f27d8-83bc-4af4-9f8d-98764f894977",
+              "Flags": 0,
+              "Name": "rock_cliff_a",
+              "Position": "1155.427,1735.542,-2537.591",
+              "Rotation": "-0.07905671,0.06331202,0.7765342,0.6218813",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "efbe573e-8b64-4c93-8fb3-6ab32eb2b246",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "995da18d-8b42-46c2-92b8-4be097a9c902",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+                  "Static": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "1e985cf5-2ede-4ffa-bce4-5da3534dd48e",
+          "Flags": 0,
+          "Name": "ac_unit_a_300x300",
+          "Position": "-442.6754,-259.3308,302.016",
+          "Rotation": "-0.001221028,0.01833718,0.2093938,-0.9776589",
+          "Scale": "0.5821964,0.5821964,0.5821964",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "7c828337-91d9-4f99-b811-72c594a4e9a2",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/ac_units/ac_unit_a_300x300.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "2d9ddccc-7f02-4a77-91ac-5e3146c4e38e",
+          "Flags": 0,
+          "Name": "rock_cliff_b",
+          "Position": "-1380.996,-621.8893,-584.0221",
+          "Rotation": "-0.5849983,-0.4164909,-0.6102223,0.3345765",
+          "Scale": "0.5064054,1,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "00198fbf-13a0-42a5-9569-dd98f55d1cda",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "111c87b4-1d1b-4346-b8eb-b5e58c522813",
+              "IsTrigger": false,
+              "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "cbb9d476-a397-4f01-a7f9-b0b46ebfed27",
+          "Flags": 0,
+          "Name": "rock_cliff_c",
+          "Position": "-795.4664,-434.9801,-377.9943",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "89420965-84b3-415a-a654-9d43b09a1f36",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/rust_nature/rocks/rock_cliff_c.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "4148c8d3-d306-4a97-aaa8-59bb6df063a0",
+              "IsTrigger": false,
+              "Model": "models/rust_nature/rocks/rock_cliff_c.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "64f307e7-eba4-4357-9c6b-4e428ed6897a",
+          "Flags": 0,
+          "Name": "rock_med_a",
+          "Position": "-1178.28,8.240601,-503.7248",
+          "Rotation": "-0.5996566,-0.3986138,0.5236571,0.4553046",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b085f134-6ff4-4a51-aff2-bea1a6857310",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "80ea10df-c6c3-471c-b734-2994a266c115",
+              "IsTrigger": false,
+              "Model": "models/rust_nature/rocks/rock_med_a.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "0d87dd7d-d6ed-45e3-9098-dba045306a64",
+          "Flags": 0,
+          "Name": "rock_cliff_a",
+          "Position": "-709.5421,-218.361,-525.683",
+          "Rotation": "-0.2946434,0.4932543,0.419725,0.7026497",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "851dba3a-a421-4647-928a-dc356dc28735",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "fd7fa8a9-1ec2-414e-a97b-d45d878a7f54",
+              "IsTrigger": false,
+              "Model": "models/rust_nature/rocks/rock_cliff_a.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "03f0a5db-fa77-484f-aafa-726f4cde2f9e",
+          "Flags": 0,
+          "Name": "rock_cliff_b (6)",
+          "Position": "-154.2794,-247.7594,-539.4603",
+          "Rotation": "-0.5849983,-0.4164909,-0.6102223,0.3345765",
+          "Scale": "0.5064055,1.357279,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c4e1196b-2698-45b8-8797-38a88ebb529d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "e3d3edd6-2244-4ca2-b0c7-29e0ec9774d0",
+              "IsTrigger": false,
+              "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "98c2a70b-64ea-40cd-91c8-4ae015a23439",
+          "Flags": 0,
+          "Name": "shipping_container_900_b",
+          "Position": "-1028.189,-391.7594,617.9315",
+          "Rotation": "-0.602336,-0.3703935,-0.5052998,0.4946435",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "0b1d9359-0e56-49fc-90fa-41f85ccecac8",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/shipping_containers/shipping_container_900_b.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "1d57778f-b122-4072-a3a3-23224e392327",
+          "Flags": 0,
+          "Name": "fuel_tank_a_900",
+          "Position": "-577.7567,-360.2629,360.3476",
+          "Rotation": "-0.06032559,-0.03746843,0.8473376,-0.5262851",
+          "Scale": "0.8520089,0.8520089,0.8520089",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "a9d7916f-70e5-40f6-bae1-867a79c0d67c",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/fuel_tank/fuel_tank_a_900.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "618aa55d-21c7-4753-a1f9-cddac3c45135",
+          "Flags": 0,
+          "Name": "pipeline_200x300_up600",
+          "Position": "-1690.28,-583.7594,833.9315",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "97fb9229-7495-4176-a31b-a54630cfa85a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x300_up600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5d0af646-8c7f-4db7-b258-6a51ef09cb92",
+          "Flags": 0,
+          "Name": "pipeline_200x600",
+          "Position": "-1690.28,136.2406,833.9314",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "0a95ae74-a844-427b-aaac-e59ab10feb0e",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "7e7c4cd6-e42b-445b-834a-67f8b9cd3927",
+          "Flags": 0,
+          "Name": "pipeline_200x600 (1)",
+          "Position": "-1690.28,136.2406,833.9314",
+          "Rotation": "0,0,0.7071069,-0.7071066",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "aa5c5394-bf9c-4542-92db-6862c6fcba91",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "812f3e94-8af2-4489-90cf-4063b550251d",
+          "Flags": 0,
+          "Name": "pipeline_200x600 (2)",
+          "Position": "-1690.28,-103.7296,833.9314",
+          "Rotation": "0,0,0.7071069,-0.7071066",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "bb06f8df-a8e5-41c7-bf44-b0aa7f875212",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "bd2c4f0b-17ab-4d90-ad4e-4ad85d007862",
+          "Flags": 0,
+          "Name": "pipeline_200x600 (3)",
+          "Position": "-1690.28,-343.7004,833.9314",
+          "Rotation": "0,0,0.7071069,-0.7071066",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "13f33ceb-b0be-4df5-ad0c-23524bb101db",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "99472ece-09ec-4330-adc7-0091f092fcd1",
+          "Flags": 0,
+          "Name": "pipeline_200x600 (4)",
+          "Position": "-1690.28,-703.7594,593.9315",
+          "Rotation": "0,0,0.7071069,-0.7071066",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "9c15a064-33b3-49c6-9627-33acd938e902",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "410e0982-9549-4137-8594-75a5567219f5",
+          "Flags": 0,
+          "Name": "pipeline_200x600 (5)",
+          "Position": "-1690.28,-943.7594,593.9315",
+          "Rotation": "0,0,0.7071069,-0.7071066",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "be071c44-132a-4bc0-ad90-b2a3fb48b38d",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/pipelines/pipeline_200x600.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "cfc59ad9-1055-47f7-bc74-2896e534141c",
+          "Flags": 0,
+          "Name": "couch",
+          "Position": "-1274.28,-491.1212,713.9315",
+          "Rotation": "-0.1148144,0.06968194,0.703665,0.6977232",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "77c5eef7-4c01-4cd0-a659-0b919c9b8c53",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/couch/couch.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "f8ada91d-6812-452d-8d29-9bc65a627abe",
+          "Flags": 0,
+          "Name": "wooden_desk_02",
+          "Position": "-1237.048,-497.6058,713.4805",
+          "Rotation": "-0.08041696,-0.137703,0.008149958,0.9871699",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "f49e16ee-8b61-4674-ab50-c3d658bdd1d1",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_02.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "13cdc7f6-60da-4d13-b7b6-20e6a48a97ed",
+          "Flags": 0,
+          "Name": "tv",
+          "Position": "-1262.978,-462.2714,738.2345",
+          "Rotation": "-0.09219179,0.09262177,0.6626111,0.7374743",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "f7f5154d-312b-4964-b1aa-33ad14f3cbc6",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "Model": "models/sbox_props/tv/tv.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "63caa97e-59e4-46f8-8666-643b82c3a5cf",
+          "Flags": 0,
+          "Name": "aircon",
+          "Position": "-1296.865,-495.4405,739.2676",
+          "Rotation": "-0.5116675,0.6304495,0.3077017,-0.4960338",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "54d42482-0ef4-4624-8f87-efd53f5f53e8",
+              "BodyGroups": 18446744073709551615,
+              "Health": 200,
+              "IsStatic": true,
+              "Model": "models/sbox_props/aircon/aircon.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "b19a4e2c-f0dc-42b2-8471-9c48f237d99d",
+          "Flags": 0,
+          "Name": "storage_plastic_box_01",
+          "Position": "-1302.598,-445.1852,714.0485",
+          "Rotation": "-0.1125109,0.06616953,0.8546048,0.5026065",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "41fcc09b-9caf-4555-99e5-c6ffbbd25b23",
+              "BodyGroups": 18446744073709551615,
+              "Health": 25,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "0e9382ea-c33c-4e0b-839d-8c7c46641961",
+          "Flags": 0,
+          "Name": "wet_floor_sign",
+          "Position": "-1490.3,-214.1193,894.329",
+          "Rotation": "-0.3841637,0.4319548,-0.5009438,0.6441182",
+          "Scale": "1.97272,1.97272,1.97272",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "d4a44d1b-f38f-4045-900a-661a9c5e19e9",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "Model": "models/props/wet_floor_sign/wet_floor_sign.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "85823a41-aa38-484c-a2cc-9a0e08e66368",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-1322.923,-479.1278,721.329",
+          "Rotation": "-0.4678768,0.2219682,-0.06896688,0.852681",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "2e143675-66cb-442f-af27-3a7ce27d3991",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5421811a-6f6e-4db6-abd5-3471e628b608",
+          "Flags": 0,
+          "Name": "bike",
+          "Position": "-1445.97,-216.0999,908.3389",
+          "Rotation": "-0.3009345,0.3441623,-0.5347099,0.7106869",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "8c9aaa08-69d1-4079-a259-f65246aceaf7",
+              "BodyGroups": 18446744073709551615,
+              "Health": 150,
+              "IsStatic": true,
+              "Model": "models/props/bike/bike.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e50d1660-144d-4b37-8a9f-e93e8d494f00",
+          "Flags": 0,
+          "Name": "wooden_door_01c",
+          "Position": "-1313.24,-460.884,721.1155",
+          "Rotation": "0.5230982,-0.05339282,-0.8485619,-0.05882161",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "54c76998-a46a-4cd8-85d2-3329d2853096",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01c.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "12062f87-8512-4b69-8d91-103378d289f4",
+          "Flags": 0,
+          "Name": "water_drum_01_base",
+          "Position": "-1518.368,-218.9084,885.5951",
+          "Rotation": "-0.05980842,0.7448043,0.1446589,0.6486626",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "2e8d9679-538c-4ecb-a282-77a176cfe0c9",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/water_drum_01_base.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "6278f19f-8b91-4151-a321-8d47268590cd",
+          "Flags": 0,
+          "Name": "cable_reel_01",
+          "Position": "-147.3892,-118.7851,143.2923",
+          "Rotation": "0.1321847,0.07255097,-0.2211221,0.9635189",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "f3c497f7-0d61-4811-8faf-a3a21b3b9b34",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/utility/cable_reel_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "03cf98d5-a9fc-49d1-a1bf-f0ecd261ba29",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-277.2407,-349.3195,209.1591",
+          "Rotation": "-0.01132996,0.08867277,-0.6561155,0.7493473",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "0520f5cb-b494-4f4b-b345-99caeaefccd2",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "461b8c33-99d3-4ca6-9a7b-7b7532fd3827",
+          "Flags": 0,
+          "Name": "bathtub_a",
+          "Position": "-165.5837,-85.75867,95.06509",
+          "Rotation": "0.06152148,0.1249305,-0.6728129,0.7265881",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "c2e33abc-11ed-4dee-a0ba-257c5f9a1b9f",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/bathtub_a/bathtub_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a3b3fb9f-78eb-4c8f-b0d1-da7c6e7b30d0",
+          "Flags": 0,
+          "Name": "tv",
+          "Position": "-286.9958,-291.0269,201.896",
+          "Rotation": "0.2064806,-0.3403831,0.532774,0.7467641",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "4fd2c934-37e9-4fbc-be04-015bd60d0367",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "Model": "models/sbox_props/tv/tv.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "6b02b915-04aa-4eba-b4d9-97ce9d389fb1",
+          "Flags": 0,
+          "Name": "metal_wheely_bin",
+          "Position": "-303.2426,-352.7419,253.5523",
+          "Rotation": "0.07144491,0.8344874,-0.5341412,-0.1149767",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "be98e6c8-ed3f-4b59-9dcc-8225b64da918",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "MaterialGroup": "default",
+              "Model": "models/sbox_props/metal_wheely_bin/metal_wheely_bin.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "ce13b7f6-c416-416b-ba0b-0e318b053ee6",
+          "Flags": 0,
+          "Name": "bed_frame_02",
+          "Position": "-409.8835,-268.188,341.847",
+          "Rotation": "-0.2408801,-0.2803148,-0.001167834,-0.9291927",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "37e6b956-6377-4f24-89c5-2f27c5edabe7",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/bed_frame/bed_frame_02.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "3cef3e74-ecba-4384-9903-aef35aff960c",
+          "Flags": 0,
+          "Name": "office_desk",
+          "Position": "-642.8515,-396.9006,458.7135",
+          "Rotation": "0.03931981,-0.1879078,0.5055106,-0.8411918",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "29cc01fb-39e5-488c-9d32-c0fe657d1001",
+              "BodyGroups": 18446744073709551615,
+              "Health": 100,
+              "IsStatic": true,
+              "Model": "models/sbox_props/office_desk/office_desk.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "d93fe0b0-6c55-4e28-9b17-5824805b6663",
+          "Flags": 0,
+          "Name": "tv",
+          "Position": "-652.7906,-399.578,496.741",
+          "Rotation": "0.03199098,0.1892934,-0.1635395,0.9676774",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "12979bfb-526a-477c-b0ae-3c3a6e546a3e",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "Model": "models/sbox_props/tv/tv.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "3666511a-00ab-4413-bf86-6fc113349f3c",
+          "Flags": 0,
+          "Name": "tv",
+          "Position": "-652.2089,-410.4213,527.4275",
+          "Rotation": "-0.5926946,-0.2906332,0.6744412,-0.3307184",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "a399ec28-3576-4f38-9cf2-a51b35b775f6",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "Model": "models/sbox_props/tv/tv.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "45b3d3b0-72cd-46bf-9cf3-cd9569c3b526",
+          "Flags": 0,
+          "Name": "tv",
+          "Position": "-861.9583,-345.4529,539.9967",
+          "Rotation": "0.1896117,0.5853332,-0.2429352,0.7499433",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "3352c427-3b31-4486-b660-27ba854f5950",
+              "BodyGroups": 18446744073709551615,
+              "Health": 20,
+              "IsStatic": true,
+              "Model": "models/sbox_props/tv/tv.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "646a2089-17a4-4954-9d4e-c9fb1c60b6ef",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-936.5176,-364.9744,543.4545",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "7386428f-2292-40dc-8996-db494a32bf20",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "db9e8561-39a2-4b41-bd42-39a397222ae8",
+          "Flags": 0,
+          "Name": "cola_can",
+          "Position": "-895.0238,-391.8283,532.6299",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Scale": "2.394311,2.394311,2.394311",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "cd89801b-525e-4ed3-b497-2c2741b59f24",
+              "BodyGroups": 18446744073709551615,
+              "Health": 10,
+              "IsStatic": true,
+              "Model": "models/sbox_props/cola_can/cola_can.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a8915372-191b-4886-adb0-1d3ae3c80f10",
+          "Flags": 0,
+          "Name": "trolley",
+          "Position": "-951.4651,-328.2586,548.795",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "0bfa15e3-21e5-43a3-a69d-fb60e4aa4992",
+              "BodyGroups": 18446744073709551615,
+              "Health": 400,
+              "IsStatic": true,
+              "Model": "models/sbox_props/trolley/trolley.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "4e2cc91a-8c05-47b7-9ebf-da3c5c101d6a",
+          "Flags": 0,
+          "Name": "storage_box_01",
+          "Position": "-902.2303,-324.063,537.9139",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "2a479de3-1bd9-48a4-b131-59b1995fba91",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "696671c2-93b9-45c0-9339-667aa19180c6",
+          "Flags": 0,
+          "Name": "storage_box_01 (1)",
+          "Position": "-906.8201,-342.4417,537.9141",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "94f6382c-6ef9-4c2a-b92d-dfd30ca2a660",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "1ad7dd50-2736-4d99-b39c-ebd85279287b",
+          "Flags": 0,
+          "Name": "storage_box_01 (2)",
+          "Position": "-890.0417,-337.1298,534.5078",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "e71258e3-35e5-405a-9249-7770b9a56619",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5b876c45-2941-4a72-8bdc-43e002639b7e",
+          "Flags": 0,
+          "Name": "storage_box_01 (3)",
+          "Position": "-896.2339,-335.5834,544.6752",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "f85093bc-5256-4d9e-b478-9e3fa0b8fe41",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "8f8bc887-9ecd-441c-9116-4cbb2281f4fa",
+          "Flags": 0,
+          "Name": "step_ladder_02",
+          "Position": "-1146.64,-317.7122,592.1672",
+          "Rotation": "-0.1074279,-0.0297701,-0.8648368,-0.4895207",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "3f11c6b2-3608-43d2-aa13-82de390106e2",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/utility/step_ladder_02.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "9bc1e206-bed8-4c3d-833b-77d54a5ef390",
+          "Flags": 0,
+          "Name": "wooden_crate_02",
+          "Position": "-1078.249,-288.3503,578.6816",
+          "Rotation": "-0.007788122,0.1112041,-0.3075561,0.9449774",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "547eb549-10cc-4b19-ada7-3e696727d42f",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/crate/wooden_crate/wooden_crate_02.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "cfde0216-61e1-40ee-95c5-fed7700b12ff",
+          "Flags": 0,
+          "Name": "ticket_machine",
+          "Position": "-1056.581,-360.853,570.1521",
+          "Rotation": "0.08785789,0.06861487,0.6116732,0.783217",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "1a7b2bb0-b168-44f1-aa5f-042d672dde75",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/ticket_machine/ticket_machine.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "0c5d6eb4-850c-471d-905c-faa8e2431b5f",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-102.3516,-393.9376,8.726776",
+          "Rotation": "-0.00000004214685,0.00000004214684,0.7071068,0.7071066",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "b5640f1c-e41b-469e-bf05-f173dda3c158",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "61ddfcbd-9e66-4708-85ae-f023f30c8699",
+          "Flags": 0,
+          "Name": "plastic_tray_01",
+          "Position": "-71.67621,-325.5182,38.54233",
+          "Rotation": "0.9947854,0.0004116443,-0.1019097,-0.004018242",
+          "Scale": "1.768714,1.768714,1.768714",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "52d31348-98b3-49a5-a151-9fafeb1294b2",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/storage/plastic_tray_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e6371729-ce23-4322-8432-7480eda2b0d1",
+          "Flags": 0,
+          "Name": "aircon",
+          "Position": "-29.64337,-320.7758,8.642273",
+          "Rotation": "0.4829629,-0.3705904,-0.4829629,0.6294096",
+          "Scale": "2.097263,2.097263,2.097263",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "5d557e3f-8961-4642-a171-f74a6126176a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 200,
+              "IsStatic": true,
+              "Model": "models/sbox_props/aircon/aircon.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "104efb3f-30cb-4c9f-9a0a-8eaf721d4521",
+          "Flags": 0,
+          "Name": "wateringcanmetallarge",
+          "Position": "-101.9649,-411.4408,49.18045",
+          "Rotation": "-0.0974053,0.1983483,0.7266375,0.6505136",
+          "Scale": "1.819378,1.819378,1.819378",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "96d3b5f7-b07c-4d70-8e01-a81156945877",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/wateringcans/wateringcanmetallarge.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "65a81b23-4832-44d1-af08-12ab73b97da0",
+          "Flags": 0,
+          "Name": "plastic_crate_02",
+          "Position": "-83.97101,-322.1113,34.05545",
+          "Rotation": "-0.9853352,0.1662095,-0.01745091,0.03441618",
+          "Scale": "1.495123,1.495123,1.495123",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "10f0679f-ce07-4c1e-89fd-1b8dacac43bf",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/plastic_crate/plastic_crate_02.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "0a1a5e4d-4bf9-4c7f-bba0-3c8e041cf631",
+          "Flags": 0,
+          "Name": "couch",
+          "Position": "-207.2701,-504.6329,-153.996",
+          "Rotation": "-0.02909563,0.1198304,0.1790624,-0.9760792",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "7062f8f9-0788-435c-9cd7-a361d2e7f7f9",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/couch/couch.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "8ca7169b-73cf-4d0a-b261-6984b9ec9e04",
+          "Flags": 0,
+          "Name": "pot_02a",
+          "Position": "-102.2747,-373.9121,30.50882",
+          "Rotation": "-0.1039071,0.1039187,0.6994256,0.6994341",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "3c922039-f044-49c0-bc0a-c3221f0b5836",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/pots/pot_02a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "5f685536-cdf6-4e1f-b7af-4b7ff5ba7eff",
+      "Flags": 0,
+      "Name": "chair_b",
+      "Position": "400.568,159.8879,691.8904",
+      "Rotation": "0.07364035,-0.1137602,0.538399,0.8317226",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "1a281194-ef87-4267-bb5c-0acbcca61cf3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "models/rust_props/wooden_furniture/chair_b.vmdl",
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "43d163b3-0c97-4df4-88fd-9e91382c1410",
+      "Flags": 0,
+      "Name": "wheel_a",
+      "Position": "372.8087,146.8075,654.7803",
+      "Rotation": "0.00273519,-0.004225373,0.5434049,0.8394557",
+      "Scale": "1.758314,1.758314,1.758314",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8c580cbd-e4eb-46c1-ba9f-cb78d090ce37",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "entities/modular_vehicle/wheel_a.vmdl",
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
         }
       ]
     }
@@ -641,12 +2469,47 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [
+    "facepunch.aircon",
+    "facepunch.bathtub",
+    "facepunch.bed_frame_02",
+    "facepunch.cable_reel_01",
+    "facepunch.couch",
     "facepunch.filing_cabinet_03",
-    "facepunch.office_chair",
+    "facepunch.mountainbike",
+    "facepunch.office_desk",
     "facepunch.oildrumexplosive",
     "facepunch.pallet",
+    "facepunch.plastic_crate_02",
+    "facepunch.plastic_tray_01",
+    "facepunch.pot_02a",
+    "facepunch.soda_can",
+    "facepunch.step_ladder_02",
+    "facepunch.storage_box_01",
+    "facepunch.storage_plastic_box_01",
+    "facepunch.testbed",
+    "facepunch.ticket_machine",
+    "facepunch.toilet_a",
     "facepunch.trolley",
-    "facepunch.weapon_crate_stackb"
+    "facepunch.tv",
+    "facepunch.water_drum_01_base",
+    "facepunch.watering_can_03",
+    "facepunch.weapon_crate_stackb",
+    "facepunch.wet_floor_sign",
+    "facepunch.wooden_crate_02",
+    "facepunch.wooden_desk_02",
+    "facepunch.wooden_door_01c",
+    "rust.ac_unit_a_300x300",
+    "rust.chair_b",
+    "rust.fuel_tank_a_900",
+    "rust.pipeline_200x300_up600",
+    "rust.pipeline_200x600",
+    "rust.rock_cliff_a",
+    "rust.rock_cliff_b",
+    "rust.rock_cliff_c",
+    "rust.rock_med_a",
+    "rust.rock_med_b",
+    "rust.rock_med_c",
+    "rust.wheel_a"
   ],
   "__version": 1
 }
