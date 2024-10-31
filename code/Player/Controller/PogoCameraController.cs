@@ -5,6 +5,7 @@ public sealed class PogoCameraController : Component
 {
 	[Property] public float Distance { get; set; } = 400;
 	[Property] public float ZoomSpeed { get; set; } = 20;
+	[Property] public float CameraVerticalOffset { get; set; }
 	[RequireComponent] PogoController controller { get; set; }
 	public Transform Head;
 	protected override void OnStart()
@@ -21,7 +22,7 @@ public sealed class PogoCameraController : Component
 			eyeAngles.pitch = eyeAngles.pitch.Clamp( -89, 89 );
 
 			Head.Rotation = eyeAngles.ToRotation();
-			Head.Position = controller.LocalPosition + Vector3.Up * 70;
+			Head.Position = controller.LocalPosition + Vector3.Up * CameraVerticalOffset;
 
 			Distance += -Input.MouseWheel.y * ZoomSpeed;
 			Distance = Distance.Clamp( 100, 1000 );
