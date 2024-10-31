@@ -6,12 +6,12 @@ public sealed class PogoController : Component
 	[Property] public float BaseJumpForce = 200;
 	[Property] public float MaxJumpMultiplier { get; set; } = 5f;
 	[Property] public float LeanSpeed { get; set; } = 100f;
-	[Property] public BoxCollider DeathTrigger { get; set; }
-	[RequireComponent] public CharacterController Player { get; set; }
+	[RequireComponent] public PlayerController Player { get; set; }
 	public ModelPhysics Ragdoll;
 	public float JumpForce;
-	public bool IsJumping = false;
+	public bool IsJumpHeld = false;
 	public bool Alive = true;
+	public bool IsGrounded = false;
 	public TimeSince TimeHeld = 0f;
 	public Angles tilt;
 	protected override void OnEnabled()
@@ -26,32 +26,38 @@ public sealed class PogoController : Component
 	public void Move()
 	{
 		var gravity = Scene.PhysicsWorld.Gravity;
-		Player.Move();
-		if ( Player.IsOnGround )
+		Player.GroundFriction = 10000f;
+		Player.PreventGrounding(.1f);
+
+		//Custom grounded check
+		SceneTraceResult tr = Scene.Trace.Body(Player.Body.PhysicsBody, LocalPosition + Vector3.Down * 2).IgnoreGameObjectHierarchy(this.GameObject).Run();
+		IsGrounded = tr.Hit;
+
+		if( IsGrounded )
 		{
-			Player.Velocity = Player.Velocity.WithZ( 0 );
-			if ( Player.GroundObject.Tags.Has("slip") ) Player.ApplyFriction( 0f ); else { Player.ApplyFriction( 100f ); }
+			Player.Body.Velocity = new Vector3(0, 0, Player.Body.Velocity.z);
 		}
-		else Player.Velocity += gravity * Time.Delta;
 
 		//Jump hold and release
 		if ( Input.Down( "Jump" ) )
 		{
-			if ( !IsJumping ) TimeHeld = 0f;
-			IsJumping = true;
+			if ( !IsJumpHeld ) TimeHeld = 0f;
+			IsJumpHeld = true;
 			JumpForce = BaseJumpForce + TimeHeld * 400f;
 			JumpForce = float.Clamp( JumpForce, BaseJumpForce, BaseJumpForce * MaxJumpMultiplier );
 		}
 		if ( Input.Released( "Jump" ) )
 		{
-			IsJumping = false;
+			IsJumpHeld = false;
 			TimeHeld = 0f;
-			if ( Player.IsOnGround ) Player.Punch( Transform.Rotation.Up * JumpForce );
+			if ( IsGrounded ) Player.Jump(LocalRotation.Up * JumpForce);
 		}
 
-		//Pogo tilt
+		if ( IsGrounded && !IsJumpHeld ) Player.Jump( LocalRotation.Up * BaseJumpForce );
+
+		//Pogo rotation
 		Angles wishRotation = new Angles( Input.AnalogMove.x, 0, 0 ) * Time.Delta;
-		Transform.Rotation *= wishRotation * LeanSpeed;
-		Transform.Rotation = Transform.Rotation.Angles().WithYaw( Scene.Camera.Transform.Rotation.Yaw() );
+		LocalRotation *= wishRotation * LeanSpeed;
+		LocalRotation = LocalRotation.Angles().WithYaw( Scene.Camera.LocalRotation.Yaw() );
 	}
 }

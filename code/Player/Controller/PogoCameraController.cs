@@ -9,7 +9,7 @@ public sealed class PogoCameraController : Component
 	public Transform Head;
 	protected override void OnStart()
 	{
-		if ( !IsProxy ) Head.Rotation = Transform.Rotation;
+		if ( !IsProxy ) Head.Rotation = LocalRotation;
 	}
 	protected override void OnUpdate()
 	{
@@ -21,7 +21,7 @@ public sealed class PogoCameraController : Component
 			eyeAngles.pitch = eyeAngles.pitch.Clamp( -89, 89 );
 
 			Head.Rotation = eyeAngles.ToRotation();
-			Head.Position = controller.Transform.Position + Vector3.Up * 70;
+			Head.Position = controller.LocalPosition + Vector3.Up * 70;
 
 			Distance += -Input.MouseWheel.y * ZoomSpeed;
 			Distance = Distance.Clamp( 100, 1000 );
@@ -34,10 +34,10 @@ public sealed class PogoCameraController : Component
 					.WithoutTags( "trigger" )
 					.Run();
 
-				if( camTrace.Hit ) { Scene.Camera.Transform.Position = camTrace.EndPosition + camTrace.Normal; } 
-				else Scene.Camera.Transform.Position = camTrace.EndPosition;
+				if( camTrace.Hit ) { Scene.Camera.LocalPosition = camTrace.EndPosition + camTrace.Normal; } 
+				else Scene.Camera.LocalPosition = camTrace.EndPosition;
 
-				Scene.Camera.Transform.Rotation = eyeAngles.ToRotation();
+				Scene.Camera.LocalRotation = eyeAngles.ToRotation();
 			}
 		}
 	}

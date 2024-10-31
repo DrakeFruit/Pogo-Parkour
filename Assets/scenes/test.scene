@@ -14,7 +14,7 @@
       "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
       "Flags": 0,
       "Name": "Camera",
-      "Position": "-2688,0,192",
+      "Position": "-290.2278,0.0005506019,146.6927",
       "Rotation": "0,0.08889424,0,0.9960411",
       "Enabled": true,
       "Components": [
@@ -244,8 +244,8 @@
           "__guid": "22ba6e3a-f5e1-4fbb-acf9-0af05afa6759",
           "Flags": 0,
           "Name": "pallet",
-          "Position": "-202.3405,-479.1539,-133.3613",
-          "Rotation": "-0.1198304,-0.02909563,0.9760792,0.1790624",
+          "Position": "-159.2476,-390.4905,-124.8052",
+          "Rotation": "-0.1021117,-0.03956432,0.990542,0.08267108",
           "Scale": "1.241475,1.241475,1.241475",
           "Enabled": true,
           "Components": [
@@ -277,7 +277,7 @@
           "__guid": "97e09c1a-c406-4019-a2a8-d5830661b8fc",
           "Flags": 0,
           "Name": "filing_cabinet_03",
-          "Position": "-103.1539,-76.63824,115.8404",
+          "Position": "-135.8165,-76.63846,54.95993",
           "Rotation": "0.6581509,-0.4524792,0.495865,0.3409075",
           "Scale": "2.025618,2.025618,2.025618",
           "Enabled": true,
@@ -309,7 +309,7 @@
           "__guid": "2bdfc8d3-a399-484c-acc1-626950a6ec81",
           "Flags": 0,
           "Name": "trolley",
-          "Position": "-182.1542,-52.84747,193.2404",
+          "Position": "-214.8169,-52.84769,132.3599",
           "Rotation": "-0.1936339,0.8657255,-0.4256417,0.1784775",
           "Scale": "1.653961,1.653961,1.653961",
           "Enabled": true,
@@ -855,6 +855,37 @@
               ]
             },
             {
+              "__guid": "7a539200-cd79-437d-b2d9-13f33f1f51d0",
+              "Flags": 0,
+              "Name": "rock_cliff_b (3)",
+              "Position": "1755.978,1619.167,-1770.258",
+              "Rotation": "0.5950767,0.7156913,-0.3430327,-0.1264819",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "70f23e1f-01a5-4c1c-8b16-856f16ff438e",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "f615ef35-2700-42de-8f85-379fa9ac6261",
+                  "IsTrigger": false,
+                  "Model": "models/rust_nature/rocks/rock_cliff_b.vmdl",
+                  "Static": true
+                }
+              ]
+            },
+            {
               "__guid": "1cda660b-bb9a-47f9-9ba6-4a7f4c961e80",
               "Flags": 0,
               "Name": "rock_cliff_b (3)",
@@ -1299,7 +1330,7 @@
           "__guid": "1e985cf5-2ede-4ffa-bce4-5da3534dd48e",
           "Flags": 0,
           "Name": "ac_unit_a_300x300",
-          "Position": "-442.6754,-259.3308,302.016",
+          "Position": "-506.9785,-192.8975,295.6772",
           "Rotation": "-0.001221028,0.01833718,0.2093938,-0.9776589",
           "Scale": "0.5821964,0.5821964,0.5821964",
           "Enabled": true,
@@ -1496,8 +1527,8 @@
           "__guid": "1d57778f-b122-4072-a3a3-23224e392327",
           "Flags": 0,
           "Name": "fuel_tank_a_900",
-          "Position": "-577.7567,-360.2629,360.3476",
-          "Rotation": "-0.06032559,-0.03746843,0.8473376,-0.5262851",
+          "Position": "-592.188,-389.8912,364.1291",
+          "Rotation": "0.09301015,0.05776909,0.844375,-0.5244451",
           "Scale": "0.8520089,0.8520089,0.8520089",
           "Enabled": true,
           "Components": [
@@ -1754,27 +1785,6 @@
           ]
         },
         {
-          "__guid": "0e9382ea-c33c-4e0b-839d-8c7c46641961",
-          "Flags": 0,
-          "Name": "wet_floor_sign",
-          "Position": "-1490.3,-214.1193,894.329",
-          "Rotation": "-0.3841637,0.4319548,-0.5009438,0.6441182",
-          "Scale": "1.97272,1.97272,1.97272",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.Prop",
-              "__guid": "d4a44d1b-f38f-4045-900a-661a9c5e19e9",
-              "BodyGroups": 18446744073709551615,
-              "Health": 20,
-              "IsStatic": true,
-              "Model": "models/props/wet_floor_sign/wet_floor_sign.vmdl",
-              "StartAsleep": false,
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
           "__guid": "85823a41-aa38-484c-a2cc-9a0e08e66368",
           "Flags": 0,
           "Name": "toilet_a",
@@ -1789,26 +1799,6 @@
               "Health": 0,
               "IsStatic": true,
               "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
-              "StartAsleep": false,
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "5421811a-6f6e-4db6-abd5-3471e628b608",
-          "Flags": 0,
-          "Name": "bike",
-          "Position": "-1445.97,-216.0999,908.3389",
-          "Rotation": "-0.3009345,0.3441623,-0.5347099,0.7106869",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.Prop",
-              "__guid": "8c9aaa08-69d1-4079-a259-f65246aceaf7",
-              "BodyGroups": 18446744073709551615,
-              "Health": 150,
-              "IsStatic": true,
-              "Model": "models/props/bike/bike.vmdl",
               "StartAsleep": false,
               "Tint": "1,1,1,1"
             }
@@ -1835,30 +1825,10 @@
           ]
         },
         {
-          "__guid": "12062f87-8512-4b69-8d91-103378d289f4",
-          "Flags": 0,
-          "Name": "water_drum_01_base",
-          "Position": "-1518.368,-218.9084,885.5951",
-          "Rotation": "-0.05980842,0.7448043,0.1446589,0.6486626",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.Prop",
-              "__guid": "2e8d9679-538c-4ecb-a282-77a176cfe0c9",
-              "BodyGroups": 18446744073709551615,
-              "Health": 0,
-              "IsStatic": true,
-              "Model": "models/props/trim_sheets/storage/water_drum_01_base.vmdl",
-              "StartAsleep": false,
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
           "__guid": "6278f19f-8b91-4151-a321-8d47268590cd",
           "Flags": 0,
           "Name": "cable_reel_01",
-          "Position": "-147.3892,-118.7851,143.2923",
+          "Position": "-180.0519,-118.7853,82.41183",
           "Rotation": "0.1321847,0.07255097,-0.2211221,0.9635189",
           "Enabled": true,
           "Components": [
@@ -1898,7 +1868,7 @@
           "__guid": "461b8c33-99d3-4ca6-9a7b-7b7532fd3827",
           "Flags": 0,
           "Name": "bathtub_a",
-          "Position": "-165.5837,-85.75867,95.06509",
+          "Position": "-198.2463,-85.75888,34.18463",
           "Rotation": "0.06152148,0.1249305,-0.6728129,0.7265881",
           "Enabled": true,
           "Components": [
@@ -1959,7 +1929,7 @@
           "__guid": "ce13b7f6-c416-416b-ba0b-0e318b053ee6",
           "Flags": 0,
           "Name": "bed_frame_02",
-          "Position": "-409.8835,-268.188,341.847",
+          "Position": "-474.1866,-201.7547,335.5083",
           "Rotation": "-0.2408801,-0.2803148,-0.001167834,-0.9291927",
           "Enabled": true,
           "Components": [
@@ -2076,6 +2046,106 @@
           ]
         },
         {
+          "__guid": "b1511e5e-d5d8-4ad5-bd97-182dd146667b",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-946.2795,-387.7594,544.0013",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "682e0503-c090-4305-9f86-455cfaa3f747",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "c4bd8142-e372-4f8f-97e0-e25788892b2a",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-944.6487,-373.2192,584.7482",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "1b4ff177-28f6-4976-9817-055f06dce34c",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "d43ee574-3040-4003-873e-4dcd0e5f6efe",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-930.4955,-369.7594,605.4712",
+          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "8cc063b4-7607-48ec-8f34-7247a3909423",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5b76339a-523a-480d-b894-766c009032e0",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-930.4955,-353.2066,582.2493",
+          "Rotation": "-0.1214169,0.09301376,-0.1352918,0.9789293",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "ede06d5e-f0d1-41aa-ad1f-fa4051c01629",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a736d51d-bfdb-4aef-b915-38ba311314f1",
+          "Flags": 0,
+          "Name": "toilet_a",
+          "Position": "-968.2795,-353.2066,552.7675",
+          "Rotation": "-0.1214169,0.09301376,-0.1352918,0.9789293",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "89a10a10-9c15-4d29-8b7d-3cd68086ac71",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/sbox_props/toilet_a/toilet_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
           "__guid": "db9e8561-39a2-4b41-bd42-39a397222ae8",
           "Flags": 0,
           "Name": "cola_can",
@@ -2100,8 +2170,8 @@
           "__guid": "a8915372-191b-4886-adb0-1d3ae3c80f10",
           "Flags": 0,
           "Name": "trolley",
-          "Position": "-951.4651,-328.2586,548.795",
-          "Rotation": "0.01360687,0.1106429,-0.1212996,0.9863364",
+          "Position": "-955.2896,-327.1051,548.795",
+          "Rotation": "0.01706103,0.1101632,-0.152092,0.9820597",
           "Enabled": true,
           "Components": [
             {
@@ -2260,8 +2330,8 @@
           "__guid": "0c5d6eb4-850c-471d-905c-faa8e2431b5f",
           "Flags": 0,
           "Name": "toilet_a",
-          "Position": "-102.3516,-393.9376,8.726776",
-          "Rotation": "-0.00000004214685,0.00000004214684,0.7071068,0.7071066",
+          "Position": "8.759583,-329.8001,-93.22435",
+          "Rotation": "-0.0512966,-0.09076668,0.8658445,0.4893292",
           "Enabled": true,
           "Components": [
             {
@@ -2280,8 +2350,8 @@
           "__guid": "61ddfcbd-9e66-4708-85ae-f023f30c8699",
           "Flags": 0,
           "Name": "plastic_tray_01",
-          "Position": "-71.67621,-325.5182,38.54233",
-          "Rotation": "0.9947854,0.0004116443,-0.1019097,-0.004018242",
+          "Position": "-9.993225,-272.7155,-59.90933",
+          "Rotation": "0.9632713,0.2684905,0.001216518,-0.004441169",
           "Scale": "1.768714,1.768714,1.768714",
           "Enabled": true,
           "Components": [
@@ -2301,8 +2371,8 @@
           "__guid": "e6371729-ce23-4322-8432-7480eda2b0d1",
           "Flags": 0,
           "Name": "aircon",
-          "Position": "-29.64337,-320.7758,8.642273",
-          "Rotation": "0.4829629,-0.3705904,-0.4829629,0.6294096",
+          "Position": "28.09821,-244.2428,-80.44249",
+          "Rotation": "0.6275473,-0.2762842,-0.2570563,0.6810092",
           "Scale": "2.097263,2.097263,2.097263",
           "Enabled": true,
           "Components": [
@@ -2322,8 +2392,8 @@
           "__guid": "104efb3f-30cb-4c9f-9a0a-8eaf721d4521",
           "Flags": 0,
           "Name": "wateringcanmetallarge",
-          "Position": "-101.9649,-411.4408,49.18045",
-          "Rotation": "-0.0974053,0.1983483,0.7266375,0.6505136",
+          "Position": "10.92572,-348.9272,-53.56992",
+          "Rotation": "-0.2009844,0.07850814,0.8652438,0.4525424",
           "Scale": "1.819378,1.819378,1.819378",
           "Enabled": true,
           "Components": [
@@ -2343,8 +2413,8 @@
           "__guid": "65a81b23-4832-44d1-af08-12ab73b97da0",
           "Flags": 0,
           "Name": "plastic_crate_02",
-          "Position": "-83.97101,-322.1113,34.05545",
-          "Rotation": "-0.9853352,0.1662095,-0.01745091,0.03441618",
+          "Position": "-21.25726,-275.5213,-66.84834",
+          "Rotation": "-0.9857375,-0.1060317,-0.1019014,0.08182222",
           "Scale": "1.495123,1.495123,1.495123",
           "Enabled": true,
           "Components": [
@@ -2361,11 +2431,135 @@
           ]
         },
         {
+          "__guid": "5f685536-cdf6-4e1f-b7af-4b7ff5ba7eff",
+          "Flags": 0,
+          "Name": "chair_b",
+          "Position": "-458.0145,-149.4381,367.4831",
+          "Rotation": "0.07364035,-0.1137602,0.538399,0.8317226",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "1a281194-ef87-4267-bb5c-0acbcca61cf3",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/rust_props/wooden_furniture/chair_b.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "833dca7a-90b4-476b-94ea-c2eae55c3711",
+          "Flags": 0,
+          "Name": "pallet",
+          "Position": "-218.9432,-384.8532,-164.7742",
+          "Rotation": "-0.08749484,-0.06421256,0.9924325,0.05743921",
+          "Scale": "1.654953,1.654953,1.654953",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "76c538f2-b3c7-49fb-8d50-9270f0a8927c",
+              "BodyGroups": 18446744073709551615,
+              "Health": 100,
+              "IsStatic": true,
+              "Model": "models/sbox_props/pallet/pallet.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "9633307b-bc0c-4b5d-ba93-00f79179b793",
+          "Flags": 0,
+          "Name": "back_cushion_left",
+          "Position": "-176.8337,-356.3551,-109.3354",
+          "Rotation": "-0.6424673,0.6390657,0.3746682,-0.196098",
+          "Scale": "1.331592,1.331592,1.331592",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "843b7c50-7543-4cbf-9dac-c003c7df0e3e",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/couch/back_cushion_left.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "4c0c6f54-5510-4742-bc02-114f42bd2a42",
+          "Flags": 0,
+          "Name": "back_cushion_left",
+          "Position": "-179.9184,-396.6498,-117.9713",
+          "Rotation": "-0.5811344,0.6483657,0.4009379,-0.2848743",
+          "Scale": "1.371274,1.371274,1.371274",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "d24d55ac-6087-4592-8f81-f38864879a35",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/couch/back_cushion_left.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "49e51464-316d-4da0-a9f9-b15c042eee7c",
+          "Flags": 0,
+          "Name": "wooden_desk_01",
+          "Position": "-113.5108,-363.2802,-126.5583",
+          "Rotation": "-0.1081125,-0.01742892,0.9860374,-0.1254513",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "de6271ba-25ce-4c9e-8ac7-6f83b9184c20",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "43d163b3-0c97-4df4-88fd-9e91382c1410",
+          "Flags": 0,
+          "Name": "wheel_a",
+          "Position": "-485.7739,-162.5186,330.3731",
+          "Rotation": "0.00273519,-0.004225373,0.5434049,0.8394557",
+          "Scale": "1.758314,1.758314,1.758314",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "8c580cbd-e4eb-46c1-ba9f-cb78d090ce37",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "entities/modular_vehicle/wheel_a.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
           "__guid": "0a1a5e4d-4bf9-4c7f-bba0-3c8e041cf631",
           "Flags": 0,
           "Name": "couch",
-          "Position": "-207.2701,-504.6329,-153.996",
-          "Rotation": "-0.02909563,0.1198304,0.1790624,-0.9760792",
+          "Position": "-159.684,-416.4415,-145.4359",
+          "Rotation": "-0.03956432,0.1021117,0.08267108,-0.990542",
           "Enabled": true,
           "Components": [
             {
@@ -2381,11 +2575,31 @@
           ]
         },
         {
+          "__guid": "0e442fa7-f123-4e16-b909-5ca689f3520a",
+          "Flags": 0,
+          "Name": "couch",
+          "Position": "-154.4623,-363.8635,-141.0059",
+          "Rotation": "0.1021116,0.03956434,-0.9905419,-0.08267129",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "30644bb0-d35e-4599-8750-032a740b8c03",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "Model": "models/props/couch/couch.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
           "__guid": "8ca7169b-73cf-4d0a-b261-6984b9ec9e04",
           "Flags": 0,
           "Name": "pot_02a",
-          "Position": "-102.2747,-373.9121,30.50882",
-          "Rotation": "-0.1039071,0.1039187,0.6994256,0.6994341",
+          "Position": "-5.375916,-314.9361,-71.89989",
+          "Rotation": "-0.1779753,-0.01786509,0.8489037,0.4973611",
           "Enabled": true,
           "Components": [
             {
@@ -2399,47 +2613,26 @@
               "Tint": "1,1,1,1"
             }
           ]
-        }
-      ]
-    },
-    {
-      "__guid": "5f685536-cdf6-4e1f-b7af-4b7ff5ba7eff",
-      "Flags": 0,
-      "Name": "chair_b",
-      "Position": "400.568,159.8879,691.8904",
-      "Rotation": "0.07364035,-0.1137602,0.538399,0.8317226",
-      "Enabled": true,
-      "Components": [
+        },
         {
-          "__type": "Sandbox.Prop",
-          "__guid": "1a281194-ef87-4267-bb5c-0acbcca61cf3",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": false,
-          "Model": "models/rust_props/wooden_furniture/chair_b.vmdl",
-          "StartAsleep": false,
-          "Tint": "1,1,1,1"
-        }
-      ]
-    },
-    {
-      "__guid": "43d163b3-0c97-4df4-88fd-9e91382c1410",
-      "Flags": 0,
-      "Name": "wheel_a",
-      "Position": "372.8087,146.8075,654.7803",
-      "Rotation": "0.00273519,-0.004225373,0.5434049,0.8394557",
-      "Scale": "1.758314,1.758314,1.758314",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "8c580cbd-e4eb-46c1-ba9f-cb78d090ce37",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": false,
-          "Model": "entities/modular_vehicle/wheel_a.vmdl",
-          "StartAsleep": false,
-          "Tint": "1,1,1,1"
+          "__guid": "5757422b-1e87-49d7-a487-cab3e27548cd",
+          "Flags": 0,
+          "Name": "cable_reel_01",
+          "Position": "-8.323364,-291.8981,-99.27632",
+          "Rotation": "0.0231232,-0.07366668,0.2482238,0.9656208",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "c298d882-3bc7-432d-a75e-55b61465949d",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "Model": "models/props/trim_sheets/utility/cable_reel_01.vmdl",
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
         }
       ]
     }
@@ -2469,47 +2662,45 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [
-    "facepunch.aircon",
-    "facepunch.bathtub",
-    "facepunch.bed_frame_02",
-    "facepunch.cable_reel_01",
-    "facepunch.couch",
-    "facepunch.filing_cabinet_03",
-    "facepunch.mountainbike",
-    "facepunch.office_desk",
-    "facepunch.oildrumexplosive",
-    "facepunch.pallet",
-    "facepunch.plastic_crate_02",
-    "facepunch.plastic_tray_01",
-    "facepunch.pot_02a",
-    "facepunch.soda_can",
-    "facepunch.step_ladder_02",
-    "facepunch.storage_box_01",
-    "facepunch.storage_plastic_box_01",
-    "facepunch.testbed",
-    "facepunch.ticket_machine",
-    "facepunch.toilet_a",
-    "facepunch.trolley",
-    "facepunch.tv",
-    "facepunch.water_drum_01_base",
-    "facepunch.watering_can_03",
-    "facepunch.weapon_crate_stackb",
-    "facepunch.wet_floor_sign",
-    "facepunch.wooden_crate_02",
-    "facepunch.wooden_desk_02",
-    "facepunch.wooden_door_01c",
-    "rust.ac_unit_a_300x300",
-    "rust.chair_b",
-    "rust.fuel_tank_a_900",
-    "rust.pipeline_200x300_up600",
-    "rust.pipeline_200x600",
-    "rust.rock_cliff_a",
-    "rust.rock_cliff_b",
-    "rust.rock_cliff_c",
-    "rust.rock_med_a",
-    "rust.rock_med_b",
-    "rust.rock_med_c",
-    "rust.wheel_a"
+    "facepunch.aircon#59857",
+    "facepunch.bathtub#18870",
+    "facepunch.bed_frame_02#45168",
+    "facepunch.cable_reel_01#47583",
+    "facepunch.couch#33708",
+    "facepunch.filing_cabinet_03#45172",
+    "facepunch.office_desk#29073",
+    "facepunch.oildrumexplosive#26722",
+    "facepunch.pallet#33622",
+    "facepunch.plastic_crate_02#47050",
+    "facepunch.plastic_tray_01#43558",
+    "facepunch.pot_02a#43560",
+    "facepunch.soda_can#33662",
+    "facepunch.step_ladder_02#47580",
+    "facepunch.storage_box_01#43562",
+    "facepunch.storage_plastic_box_01#43568",
+    "facepunch.testbed#75743",
+    "facepunch.ticket_machine#58720",
+    "facepunch.toilet_a#33626",
+    "facepunch.trolley#33629",
+    "facepunch.tv#33694",
+    "facepunch.watering_can_03#45573",
+    "facepunch.weapon_crate_stackb#61258",
+    "facepunch.wooden_crate_02#43575",
+    "facepunch.wooden_desk_01#43580",
+    "facepunch.wooden_desk_02#43581",
+    "facepunch.wooden_door_01c#43542",
+    "rust.ac_unit_a_300x300#25162",
+    "rust.chair_b#25349",
+    "rust.fuel_tank_a_900#25184",
+    "rust.pipeline_200x300_up600#25235",
+    "rust.pipeline_200x600#25237",
+    "rust.rock_cliff_a#25118",
+    "rust.rock_cliff_b#25120",
+    "rust.rock_cliff_c#25119",
+    "rust.rock_med_a#25127",
+    "rust.rock_med_b#25125",
+    "rust.rock_med_c#25123",
+    "rust.wheel_a#26721"
   ],
   "__version": 1
 }

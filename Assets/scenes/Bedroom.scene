@@ -1,0 +1,287 @@
+{
+  "__guid": "06c94e2e-7a3b-4852-a075-ce8b99ef3ab9",
+  "GameObjects": [
+    {
+      "__guid": "71d6b36c-f6de-449c-99b9-679c8ed9cb19",
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "b98b1d8e-78c5-41b9-b37f-e98ec8177b04",
+          "Description": "",
+          "SceneTags": "",
+          "Title": "lab"
+        }
+      ]
+    },
+    {
+      "__guid": "98211884-44a0-40d4-9846-09f2bbaf5da2",
+      "Flags": 0,
+      "Name": "pogoplayer",
+      "Tags": "player",
+      "Enabled": true,
+      "__Prefab": "prefabs/pogoplayer.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "e3e33ff2-adef-40e0-b00b-4878ad6acde0",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-192,-0.0000113912,102",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "c7c7ae19-87e8-4001-8bce-6d72a96d9074",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "c98e7cbc-6734-40c8-8e05-4235ed122c4a",
+      "Flags": 0,
+      "Name": "Map",
+      "Position": "11.87833,-53.92795,67.17616",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "6790b0df-dff3-40fb-a592-948d02905e56",
+          "Flags": 0,
+          "Name": "Envmap",
+          "Position": "0,0,2236.824",
+          "Tags": "skybox",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.EnvmapProbe",
+              "__guid": "fb6ccca7-7221-4ba2-bfeb-8c5b775e9530",
+              "Bounds": {
+                "Mins": "-2048,-2048,-2048",
+                "Maxs": "2048,2048,2048"
+              },
+              "DelayBetweenUpdates": 0.1,
+              "Feathering": 0.25,
+              "FrameInterval": 5,
+              "MaxDistance": 512,
+              "MultiBounce": true,
+              "Projection": "Sphere",
+              "RenderDynamically": true,
+              "TintColor": "1,1,1,1",
+              "UpdateStrategy": "OnEnabled",
+              "ZFar": 4096,
+              "ZNear": 16
+            },
+            {
+              "__type": "Sandbox.AmbientLight",
+              "__guid": "7a1f712b-1d14-4f7c-8317-b4ca53454807",
+              "Color": "0.53581,0.8,0.8,1"
+            }
+          ]
+        },
+        {
+          "__guid": "c74ef517-50bb-426f-a493-0f2023f43f4e",
+          "Flags": 0,
+          "Name": "Sun",
+          "Position": "-11.87833,53.92795,316.8239",
+          "Rotation": "0.2809769,0.8191776,-0.1622221,0.4729525",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "14deb1ea-a0a5-4536-a2f3-f714082c85dc",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.91373,0.98039,1,1",
+              "Shadows": true,
+              "SkyColor": "0,0,0,0"
+            }
+          ]
+        },
+        {
+          "__guid": "52ee3e30-61ec-4fec-8c3a-81ef64544602",
+          "Flags": 0,
+          "Name": "Box",
+          "Position": "-11.87833,53.92795,3068.824",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.MeshComponent",
+              "__guid": "f05287ba-29ba-474c-8c5f-a435247b3c3e",
+              "Collision": "Mesh",
+              "Color": "1,1,1,1",
+              "HideInGame": false,
+              "IsTrigger": false,
+              "Mesh": {
+                "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+                "Positions": [
+                  "4480,4480,-3136",
+                  "-4480,4480,-3136",
+                  "-4480,-4480,-3136",
+                  "4480,-4480,-3136",
+                  "4480,-4480,1472",
+                  "-4480,-4480,1472",
+                  "-4480,4480,1472",
+                  "4480,4480,1472"
+                ],
+                "TextureCoord": [
+                  "-0.6249989,-0.7500002",
+                  "1.125,0.2499998",
+                  "-0.6249989,0.9999998",
+                  "1.375001,0.2499998",
+                  "1.125,0.9999998",
+                  "1.625001,0.2499997",
+                  "1.125,-0.7500002",
+                  "0.8749999,0.2499997",
+                  "-35,35",
+                  "-0.1249991,-0.6500002",
+                  "-35,-35",
+                  "-0.374999,-0.6500001",
+                  "35,-35",
+                  "-0.624999,-0.6500001",
+                  "35,35",
+                  "-0.8749996,-0.6500001",
+                  "-0.8749996,0.2499997",
+                  "1.125,-0.6500001",
+                  "0.8749999,-0.6500001",
+                  "-0.1249991,0.2499997",
+                  "1.375001,-0.6500001",
+                  "-0.624999,0.2499998",
+                  "-0.374999,0.2499998",
+                  "1.625001,-0.6500002"
+                ],
+                "TextureUAxis": [
+                  "1,0,0",
+                  "1,-0,0",
+                  "0,-1,0",
+                  "0,1,0",
+                  "-1,0,0",
+                  "1,0,0"
+                ],
+                "TextureVAxis": [
+                  "0,-1,-0",
+                  "-0,-1,-0",
+                  "0,0,-1",
+                  "0,0,-1",
+                  "0,0,-1",
+                  "0,0,-1"
+                ],
+                "TextureScale": [
+                  "10.00001,10",
+                  "0.25,0.25",
+                  "5.000001,5.000001",
+                  "5,5",
+                  "5,5",
+                  "5.000003,5.000001"
+                ],
+                "TextureOffset": [
+                  "128.0003,63.99988",
+                  "0,0",
+                  "0.0001220703,255.9996",
+                  "512.001,255.9998",
+                  "768.001,255.9996",
+                  "256.0005,255.9998"
+                ],
+                "MaterialIndex": [
+                  1,
+                  0,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Materials": [
+                  "materials/dev/reflectivity_30.vmat",
+                  "materials/generic/carpet_b.vmat",
+                  "materials/generic/carpet_a.vmat",
+                  "materials/plaster/wall/plaster_b.vmat",
+                  "materials/generic/carpet_c.vmat"
+                ]
+              },
+              "SmoothingAngle": 40,
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "Metadata": {
+      "Title": "lab"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": "lab",
+  "Description": null,
+  "__references": [
+    "facepunch.carpet_a#18621",
+    "facepunch.carpet_b#18623",
+    "facepunch.carpet_c#18624",
+    "facepunch.plaster_b#47042",
+    "facepunch.testbed#75743"
+  ],
+  "__version": 2
+}
